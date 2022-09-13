@@ -13,6 +13,7 @@ nav {
   padding-bottom: 0px !important;
 }
 
+
 .w-90 {
   width: 90%;
 }
@@ -48,25 +49,50 @@ nav {
   height: 32px;
   width: 32px;
 }
+.form-select:hover, .form-control:hover{
+  box-shadow: none  !important;
+  border: 1px solid #5CB85F;
+  
+
+}
+.form-select option{
+  color:#4caf50;
+  background-color: white;
+}
+
+.form-select option:hover {
+  background-color: #5CB85F !important;
+  color: black !important;
+}
+
+
+
+
+
+
+
+
+
 
 #container-testimonial {
   width: 100%;
 }
 
-.form-select:not(.collapsed)::after {
-   background-image: url(/public/images/icons/fi_chevron-up.png) !important;
-  
+#pilih-waktu{
+  background-image: url(/public/images/icons/fi_clock.png) !important;
+  background-size: auto;
+
+
+}
+#pilih-tanggal{
+  background-image: url(/public/images/icons/fi_calendar.png) !important;
+  background-size: auto;
+
 }
 
-.form-select::after {
-  
-  background-image: url(/public/images/icons/fi_chevron-down.png) !important;
-  
-  
-}
-.form-penumpang{
-  background-image: url(/public/images/icons/fi_users.png) !important;
-
+.form-select{
+  font-family:"Helvetica";
+  font-size: 14px !important;
 }
 
 
