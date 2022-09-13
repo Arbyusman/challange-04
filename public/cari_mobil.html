@@ -98,61 +98,93 @@
           terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
           untuk sewa mobil selama 24 jam.
         </p>
-        <button
-          class="px-3 py-2 btn btn-success fw-bold border-0"
-          style="background: #5cb85f"
-        >
-          Mulai Sewa Mobil
-        </button>
+        
       </div>
       <img src="./images/img_car.png" class="w-50" alt="..." />
     </section>
     <!-- End Hero -->  
-
-    
-      
     
     <!-- cari mobil -->
     <section
       class="container-fluid "
-      style="width: 80%"
+      id="cari-mobil"
+      style="width: 80%;margin-top: -3%;position: sticky; "
     >
-    <div class="container-fluid d-flex flex-row justify-content-between rounded-2 " style="background: #FFFFFF;; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);">
+    <div class="container-fluid d-flex flex-row justify-content-between rounded-2 " style="background: #FFFFFF; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);">
 
-        <div class="py-3">
-            <p>Tipe Driver</p>
-            <select class="form-select">   
-              <option selected>Pilih Waktu</option>                        
-              <option value="1">Dengan Sopir</option>
-              <option value="2">Tanpa Sopir (Lepas Kunci)</option>
-            </select>
-        </div>
-        <div class="py-3">
-            <div>
-          <p>Tanggal</p>
-        </div>
-      </div>
-      <div class="py-3">
-        <p>Waktu Jemput/Ambil</p>
-        <select class="form-select " >
-          <option selected>Pilih Waktu</option>
-          <option value="1">Dengan Sopir</option>
-          <option value="2">Tanpa Sopir (Lepas Kunci)</option>
+       <div class="mx-2 my-3" style="width:22% ;">
+        <p class="mb-0">Tipe driver</p>
+        <select class="form-select" style="height: 50%;" >
+          <option  hidden>Pilih Tipe Driver</option>
+          <option class="tipe-driver" value="1">Dengan Sopir</option>
+          <option class="tipe-driver" value="2">Tanpa Sopir(Lepas Kunci)</option>
+          
         </select>
       </div>
-      <div class="py-3">
-        <p>Jumlah Penumpang (optional)</p>
-        <select class="form-select form-penumpang" >
-          <option selected>Jumlah Penumpang</option>
-          <option value="1">Dengan Sopir</option>
-          <option value="2">Tanpa Sopir (Lepas Kunci)</option>
+      <div class="mx-2 my-3" style="width:22% ; ">
+        <p class="mb-0">Tanggal</p>
+
+        <select class="form-select" id="pilih-tanggal" style="height: 50%; ">
+          <option hidden>Pilih Tanggal</option>
+          <option class="dropdown-item" value="1">Dengan Sopir</option>
+          <option class="dropdown-item" value="2">Tanpa Sopir(Lepas Kunci)</option>
+          
         </select>
       </div>
-      <div class="">
+      <div class="mx-2 my-3" style="width:22% ;">
+        <p class="mb-0">Waktu Jemput/Ambil</p>
+
+        <select class="form-select" id="pilih-waktu" style="height: 50%; ">
+          <option class="fw-light" hidden>Pilih Waktu</option>
+          <option  value="1">
+            <p class="">08:00</p>
+            <p >WIB</p>
+
+          </option>
+          <option class="" value="1">
+            <p class="">09:00</p>
+            <p class="">WIB</p>
+
+          </option>
+          <option class="" value="1">
+            <p>10:00</p>
+            <p>WIB</p>
+
+          </option>
+          <option class="" value="1">
+            <p>11:00</p>
+            <p>WIB</p>
+
+          </option>
+          <option class="" value="1">
+            <p>12:00</p>
+            <p>WIB</p>
+
+          </option>
+          
+          
+        </select>
+      </div>
+
+      <div class="mx-2 my-3" style="width:22% ;">
+        <p class="mb-0">Jumlah Penumpang (Optional)</p>
+        <div class="input-group  mb-3" style="height: 50%; ">
+          
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          
+
+          
+        </div>
+
+        
+      </div>
+        
+      <div class=" my-3  d-flex  align-items-center justify-content-center" style="width:12%; ">
         <button
           type="button"
-          class="btn btn-success fw-bold border-0 px-3"
-          style="background: #5cb85f"
+          class="btn btn-success fw-bold border-0 me-0"
+          style="background: #5cb85f;height: 50%; "
+
         >
           Cari Mobil
         </button>
