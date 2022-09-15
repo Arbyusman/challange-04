@@ -13,7 +13,6 @@ nav {
   padding-bottom: 0px !important;
 }
 
-
 .w-90 {
   width: 90%;
 }
@@ -49,52 +48,102 @@ nav {
   height: 32px;
   width: 32px;
 }
-.form-select:hover, .form-control:hover{
-  box-shadow: none  !important;
-  border: 1px solid #5CB85F;
-  
-
-}
-.form-select option{
-  color:#4caf50;
-  background-color: white;
-}
-
-.form-select option:hover {
-  background-color: #5CB85F !important;
-  color: black !important;
-}
-
-
-
-
-
-
-
-
-
 
 #container-testimonial {
   width: 100%;
 }
 
-#pilih-waktu{
-  background-image: url(/public/images/icons/fi_clock.png) !important;
-  background-size: auto;
 
-
+/* tipe driver */
+.custom-select {
+  position: relative;
+  font-size: 14px;
+  width: 22%;
 }
-#pilih-tanggal{
-  background-image: url(/public/images/icons/fi_calendar.png) !important;
-  background-size: auto;
-
-}
-
-.form-select{
-  font-family:"Helvetica";
-  font-size: 14px !important;
+.custom-select select {
+  display: none;
 }
 
+.select-selected {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+}
+.select-selected:hover , .form-date:hover{
+  background: #ffffff;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+  box-shadow: none !important;
+}
+.form-date:focus {
+  background: #ffffff;
+  border: 1px solid #5cb85f !important;
+  border-radius: 2px;
+  box-shadow: none !important;
+  border-color: #86b7fe;
+  outline: 0;
+}
+
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  background: white;
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  z-index: 10;
+}
+
+.select-items div:nth-child(1) {
+  position: absolute;
+  top: 60;
+}
+.select-items div:nth-child(2) {
+  position: absolute;
+  top: 97px;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background: #c9e7ca;
+  color: #5cb85f;
+  font-weight: 500;
+}
+
+.form-date {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+
+/* tipe driver */
 
 /* HP Potrait */
 @media (max-width: 600px) {
