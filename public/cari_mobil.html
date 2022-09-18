@@ -104,9 +104,9 @@
 
     <!-- cari mobil -->
     <section
-      class="container-fluid"
+      class="container-fluid p-0"
       id="cari-mobil"
-      style="width: 80%; margin-top: -3%; position: sticky"
+      style="width: 80%; margin-top: -4%; position: sticky"
     >
       <div
         class="container-fluid d-flex flex-row justify-content-between rounded-2"
@@ -119,11 +119,13 @@
         <div class="custom-select mx-2 my-3">
           <label for="typedriver" style="font-size: 14px">Tipe Driver</label>
           <select id="typedriver" style="height: 50%">
+            <span> <img src="../public/images/icons/fi_chevron-up.png"> </span>
             <option>Pilih Tipe Driver</option>
             <option>Dengan Sopir</option>
             <option>Tanpa Sopir(Lepas Kunci)</option>
           </select>
         </div>
+
         <div class="mx-2 my-3" style="width: 22%">
           <label for="inpudate" style="font-size: 14px">Tanggal</label>
           <input
@@ -134,31 +136,31 @@
             style="height: 50%"
           />
         </div>
+
         <div class="custom-select mx-2 my-3">
           <label for="typedriver" style="font-size: 14px">Tipe Driver</label>
           <select id="typedriver" style="height: 50%">
-            <option>Pilih Waktu </option>
-            <option>
-              <p> 08:00</p>
-              <p> WIB</p>
+            <option>Pilih Tipe Driver</option>
+            <option class="d-flex justify-content-between">
+              <p>08:00</p>
+              <p>WIB</p>
             </option>
             <option>
-              <p> 09:00</p>
-              <p> WIB</p>
+              <p>09:00</p>
+              <p>WIB</p>
             </option>
             <option>
-              <p> 10:00</p>
-              <p> WIB</p>
+              <p>10:00</p>
+              <p>WIB</p>
             </option>
             <option>
-              <p> 11:00</p>
-              <p> WIB</p>
+              <p>11:00</p>
+              <p>WIB</p>
             </option>
             <option>
-              <p> 12:00</p>
-              <p> WIB</p>
+              <p>12:00</p>
+              <p>WIB</p>
             </option>
-            
           </select>
         </div>
 
@@ -188,9 +190,9 @@
           </button>
         </div>
       </div>
-      
+
       <!-- tampil mobil -->
-      <div class="container-fluid mt-3 p-0" style="width: 100%">
+      <div class="container-fluid mt-3 p-0">
         <div class="d-flex flex-row justify-content-center">
           <div class="card me-2">
             <div class="justify-content-center align-items-center d-flex py-4">
@@ -318,10 +320,8 @@
         </div>
       </div>
       <!-- End tampil mobil -->
-    
     </section>
     <!-- end cari mobil -->
-
 
     <!-- Footer -->
     <footer class="container-fluid d-flex justify-content-center my-5">
