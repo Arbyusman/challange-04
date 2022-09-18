@@ -54,35 +54,57 @@ nav {
 }
 
 /* tipe driver */
-.custom-select {
-  position: relative;
+.select-driver,.select-waktu  {
+  position: relative !important;
   font-size: 14px;
-  width: 22%;
+  
 }
-.custom-select select {
+.select-driver select, .select-waktu select {
   display: none;
 }
 
-.select-selected {
+.select-selected-driver {
   color: rgb(0, 0, 0);
   padding: 8px 16px;
   width: 100%;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
   border: 1px solid #d0d0d0;
   border-radius: 2px;
-  background: url(../images/icons/fi_chevron-down.png) no-repeat center right 2%;
+  background: url(../images/icons/fi_chevron-down.png) no-repeat center right 3%;
   background-size: auto;
+  
 }
-.select-selected:hover {
+.select-selected-driver:hover {
   background: #ffffff;
   border: 1px solid #5cb85f;
   border-radius: 2px;
   box-shadow: none !important;
-  background: url(../images/icons/fi_chevron-down.png) no-repeat center right 2%;
+  background: url(../images/icons/fi_chevron-down.png) no-repeat center right 3%;
   background-size: auto;
 }
 
-.select-items div {
+.select-selected-waktu {
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: url(../images/icons/fi_clock.png) no-repeat center right 3%;
+  background-size: auto;
+  
+}
+.select-selected-waktu:hover {
+  background: #ffffff;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+  box-shadow: none !important;
+  background: url(../images/icons/fi_clock.png) no-repeat center right 3%;
+  background-size: auto;
+}
+
+
+.select-items div,  .form-control,.form-date {
   background: white;
   color: black;
   margin-top: 0%;
@@ -110,6 +132,18 @@ nav {
   font-weight: 500;
 }
 
+#pilih-waktu{
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: url(../images/icons/fi_clock.png) !;
+  background-size: auto;
+
+}
+
 .form-date{
   color: rgb(0, 0, 0);
   padding: 8px 16px;
@@ -117,19 +151,61 @@ nav {
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
   border: 1px solid #d0d0d0;
   border-radius: 2px;
-  background: url(../images/icons/fi_chevron-down.png) no-repeat center right 2%;
-  background-size: auto;
-
+  
 }
 
-.form-date:hover, .form-date:focus{
+.form-date:hover, .form-date::after{
   background: #ffffff;
   border: 1px solid #5cb85f;
   border-radius: 2px;
   box-shadow: none !important;
-  background: url(../images/icons/fi_chevron-down.png) no-repeat center right 2%;
-  background-size: auto;
+  
 }
+
+input[type="date"]:focus{
+  border: 1px solid #5cb85f !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../images/icons/fi_calendar.png) no-repeat;
+  background-size: auto;
+  margin-right: -2% !important;
+}
+
+input[type=text], input[type=text]:focus {
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: url(../images/icons/fi_users.png) no-repeat center right 3%;
+  background-size: auto;
+  
+
+  
+}
+input[type=text]:hover{
+  background: #ffffff;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+  box-shadow: none !important;
+  background: url(../images/icons/fi_users.png) no-repeat center right 3%;
+  background-size: auto;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
 
 
 
