@@ -72,6 +72,7 @@ nav {
   border-radius: 2px;
   background: url(../images/icons/fi_chevron-down.png) no-repeat center right 3%;
   background-size: auto;
+  margin-top: 3px;
   
 }
 .select-selected-driver:hover {
@@ -92,6 +93,20 @@ nav {
   border-radius: 2px;
   background: url(../images/icons/fi_clock.png) no-repeat center right 3%;
   background-size: auto;
+  margin-top: 3px;
+  
+}
+
+.select-selected-waktu::after {
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: url(../images/icons/fi_chevron-up.png) no-repeat center right 3%;
+  background-size: auto;
+  margin-top: 3px;
   
 }
 .select-selected-waktu:hover {
@@ -162,11 +177,14 @@ nav {
   
 }
 
-input[type="date"]:focus{
-  border: 1px solid #5cb85f !important;
-  border-radius: 2px !important;
-  box-shadow: none !important;
+input[type="date"]:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
+
 
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -177,6 +195,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: auto;
   margin-right: -2% !important;
 }
+input[type="date"] {
+  
+}
+
+
 
 input[type=text], input[type=text]:focus {
   color: rgb(0, 0, 0);
@@ -187,7 +210,6 @@ input[type=text], input[type=text]:focus {
   border-radius: 2px;
   background: url(../images/icons/fi_users.png) no-repeat center right 3%;
   background-size: auto;
-  
 
   
 }
@@ -201,6 +223,8 @@ input[type=text]:hover{
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
 
 }
+
+
 
 
 

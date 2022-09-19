@@ -1,5 +1,4 @@
-
-let x, i, j, l, ll, selElmnt, a, b, c,d;
+let x, i, j, l, ll, selElmnt, a, b, c, d;
 
 x = document.getElementsByClassName("select-driver");
 l = x.length;
@@ -74,8 +73,6 @@ function closeAllSelect(elmnt) {
 
 document.addEventListener("click", closeAllSelect);
 
-
-
 x = document.getElementsByClassName("select-waktu");
 l = x.length;
 
@@ -90,12 +87,9 @@ for (i = 0; i < l; i++) {
 
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
-  
-  
-  
-  
+
   for (j = 1; j < ll; j++) {
-    c = document.createElement("DIV");
+    c = document.createElement("div");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function (e) {
       let y, i, k, s, h, sl, yl;
@@ -117,12 +111,10 @@ for (i = 0; i < l; i++) {
       }
       h.click();
     });
-    
-    
+
     b.appendChild(c);
-    
   }
-  
+
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
     e.stopPropagation();
@@ -131,10 +123,3 @@ for (i = 0; i < l; i++) {
     this.classList.toggle("select-arrow-active");
   });
 }
-
-
-
-
-
-
-
