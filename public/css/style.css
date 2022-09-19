@@ -206,7 +206,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-right: -2% !important;
 }
 
-
 input[type="text"],
 input[type="text"]:focus {
   color: rgb(0, 0, 0);
@@ -380,6 +379,51 @@ input[type="text"]:hover {
     width: 100%;
     padding: 0% !important;
   }
+
+  #cari-mobil {
+    width: 100% !important;
+    margin: 0% !important;
+  }
+
+  #tampil-mobil {
+    flex-direction: column !important;
+    align-items: center !important ;
+    width: 100% !important;
+  }
+  #menu-cari-mobil {
+    flex-direction: column !important;
+    align-items: center !important ;
+  }
+  .select-driver,
+  .select-waktu,
+  .select-penumpang,
+  .select-date,
+  #submit-cari-mobil {
+    width: 80% !important;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 3% !important;
+  }
+
+  #tampil-mobil .card {
+    margin-right: 0% !important;
+    margin-left: 0% !important;
+  }
+  #submit-cari-mobil {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 0% !important;
+  }
+  .btn-cari-mobil {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 5% !important;
+  }
 }
 
 /* Potrait Tablet */
@@ -509,5 +553,56 @@ input[type="text"]:hover {
   #footer-logo {
     width: 100%;
     padding: 0% !important;
+  }
+
+  #tampil-mobil {
+    flex-direction: column !important;
+    align-items: center !important ;
+    width: 100% !important;
+  }
+  #menu-cari-mobil {
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+  }
+  .select-driver,
+  .select-waktu,
+  .select-penumpang,
+  .select-date {
+    width: 80% !important;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 3% !important;
+  }
+
+  #tampil-mobil .card {
+    margin-right: 0% !important;
+    margin-left: 0% !important;
+    margin-bottom: 2%;
+  }
+  #submit-cari-mobil {
+    position: relative;
+    display: grid !important;
+    align-items: center !important;
+    justify-content: end !important;
+    margin-top: 0% !important;
+    height: 100% !important;
+    width: 50% !important;
+    margin-right: -5% !important;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    margin-left: 32% !important;
+  }
+  .btn-cari-mobil {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 5% !important;
+    height: 100% !important;
   }
 }

@@ -110,6 +110,7 @@
     >
       <div
         class="container-fluid d-flex flex-row justify-content-between rounded-2"
+        id="menu-cari-mobil"
         style="
           background: #ffffff;
           border-radius: 8px;
@@ -125,7 +126,7 @@
           </select>
         </div>
 
-        <div class="mx-2 my-3" style="width: 22%">
+        <div class="select-date mx-2 my-3" style="width: 22%">
           <label for="inpudate" style="font-size: 14px">Tanggal</label>
           <input
             class="form-date container-fluid"
@@ -163,7 +164,7 @@
           </select>
         </div>
 
-        <div class="mx-2 my-3 " style="width: 22%">
+        <div class="select-penumpang mx-2 my-3 " style="width: 22%">
             <label for="Jumlah-penumpang" style="font-size: 14px">Jumlah Penumpang (Optional)</label>
             <input
             id="jumlah-penumpang "
@@ -179,12 +180,13 @@
 
         <div
           class="my-3 d-flex align-items-center justify-content-center"
-          style="width: 12%"
+          style="width: 12%;height: 50% !important; "
+          id="submit-cari-mobil"
         >
           <button
             type="button"
-            class="btn btn-success fw-bold border-0 me-0"
-            style="background: #5cb85f; height: 60%"
+            class="btn-cari-mobil btn btn-success fw-bold border-0 me-0"
+            style="background: #5cb85f; height: 50%; margin-top: 18%; "
           >
             Cari Mobil
           </button>
@@ -192,8 +194,8 @@
       </div>
 
       <!-- tampil mobil -->
-      <div class="container-fluid mt-3 p-0">
-        <div class="d-flex flex-row justify-content-center">
+      <div class=" container-fluid mt-3 p-0" >
+        <div class="d-flex flex-row justify-content-center" id="tampil-mobil">
           <div class="card me-2">
             <div class="justify-content-center align-items-center d-flex py-4">
               <img
@@ -235,6 +237,8 @@
               </div>
             </div>
           </div>
+
+
           <div class="card mx-2">
             <div class="justify-content-center align-items-center d-flex py-4">
               <img
