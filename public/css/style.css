@@ -236,14 +236,25 @@ input[type="text"]:hover {
   color: #3c3c3c !important;
 }
 
-#reset-button, #reset-button:focus {
+#clear-btn,
+#clear-btn:focus {
   border: 1px solid #0d28a6 !important;
   border-radius: 2px !important;
   color: #0d28a6;
-  box-shadow: #183ad1  !important;
-  
-  
+  box-shadow: #183ad1 !important;
 }
+
+
+#cars-container {
+  display: grid !important;
+  grid-template-columns: 32.5% 32.5% 32.5%;  
+  justify-content: space-between;
+  gap: 0.5%;
+  
+    
+}
+
+
 
 /* tipe driver */
 

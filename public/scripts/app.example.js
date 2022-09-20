@@ -1,6 +1,6 @@
 class App {
   constructor() {
-    this.clearButton = document.getElementById("reset-button");
+    this.clearButton = document.getElementById("clear-btn");
     this.loadButton = document.getElementById("load-btn");
     this.carContainerElement = document.getElementById("cars-container");
   }
@@ -15,9 +15,10 @@ class App {
 
   run = () => {
     Car.list.forEach((car) => {
-      const node = document.getElementById("tampil-mobil");
+      const node = document.createElement("div");
+      node.classList.add("card-mobil");
       node.innerHTML = car.render();
-      
+      this.carContainerElement.appendChild(node);
     });
   };
 

@@ -40,21 +40,53 @@ class Car {
   }
 
   render() {
-    
-    
-    document.getElementById("card-image").innerHTML = (`${this.image}`);
-    document.getElementById("card-image").innerHTML = (`${this.manufacture}`);
-    document.getElementById("card-name").innerHTML = (`Tipe Mobil ${this.model}`);
-    document.getElementById("card-rent").innerHTML = (`RP ${this.rentPerDay} /hari`);
-    document.getElementById("card-desc").innerHTML = (` ${this.description} `);
-    document.getElementById("card-transmision").innerHTML = (` ${this.transmission} `);
-    document.getElementById("card-capacity").innerHTML = (` ${this.capacity} Orang `);
-    document.getElementById("card-year").innerHTML = (`Tahun ${this.year}`);
-    
+    return `   
+      
+    <div class="card " id="card-tampil-mobil" style="height: 100%" >
+      <div class="justify-content-center align-items-center d-flex ">
+        <img
+        id="card-image"
+          src="${this.image}"
+          class="img-fluid rounded-2 mt-2 shadow-sm"
+          alt="${this.manufacture}"
+          style="width: 270px; height: 160px"
+        />
+      </div>
+      <div class="card-body">
+        <p id="card-name">Nama/Tipe Mobil</p>
+        <h5 class="fw-semibold" id="card-rent">RP ${this.rentPerDay} /hari</h5>
+        <p class="card-text" id="card-desc">
+          ${this.description}
+        </p>
+        <div>
+          <div class="flex-row d-flex">
+            <i class="fa-solid fa-users pe-3"> </i>
+            <p id="card-capacity">${this.capacity} Orang</p>
+          </div>
+          <div class="flex-row d-flex">
+            <i class="fa-solid fa-gear pe-3"></i>
+            <p class="ps-1" id="card-transmision">${this.transmission}</p>
+          </div>
+          <div class="flex-row d-flex">
+            <i class="fa-solid fa-calendar pe-3"></i>
+            <p class="ps-1" id="card-year">Tahun ${this.year}</p>
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-success fw-bold border-0 px-3 container-fluid"
+            style="background: #5cb85f"
+          >
+            Pilih Mobil
+          </button>
+        </div>
+      </div>
+    </div>
 
-    
- 
-  return render;
-   }
-   
+      
+
+      
+    `;
+  }
 }
