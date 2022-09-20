@@ -236,6 +236,15 @@ input[type="text"]:hover {
   color: #3c3c3c !important;
 }
 
+#reset-button, #reset-button:focus {
+  border: 1px solid #0d28a6 !important;
+  border-radius: 2px !important;
+  color: #0d28a6;
+  box-shadow: #183ad1  !important;
+  
+  
+}
+
 /* tipe driver */
 
 /* HP Potrait */

@@ -40,13 +40,21 @@ class Car {
   }
 
   render() {
-    return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
-    `;
-  }
+    
+    
+    document.getElementById("card-image").innerHTML = (`${this.image}`);
+    document.getElementById("card-image").innerHTML = (`${this.manufacture}`);
+    document.getElementById("card-name").innerHTML = (`Tipe Mobil ${this.model}`);
+    document.getElementById("card-rent").innerHTML = (`RP ${this.rentPerDay} /hari`);
+    document.getElementById("card-desc").innerHTML = (` ${this.description} `);
+    document.getElementById("card-transmision").innerHTML = (` ${this.transmission} `);
+    document.getElementById("card-capacity").innerHTML = (` ${this.capacity} Orang `);
+    document.getElementById("card-year").innerHTML = (`Tahun ${this.year}`);
+    
+
+    
+ 
+  return render;
+   }
+   
 }
