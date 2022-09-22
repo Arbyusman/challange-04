@@ -1,22 +1,30 @@
-/**
- * Impor HTTP Standar Library dari Node.js
- * Hal inilah yang nantinya akan kita gunakan untuk membuat
- * HTTP Server
- * */
- const http = require('http');
- const { PORT = 8000 } = process.env; // Ambil port dari environment variable
- 
- // Request handler
- // Fungsi yang berjalan ketika ada request yang masuk.
- function onRequest(req, res) {
-   // Memberi status 200
-   res.writeHead(200);
-   res.end("Halo dari server!");
- }
- 
- const server = http.createServer(onRequest);
- 
- // Jalankan server
- server.listen(PORT, '0.0.0.0', () => {
-   console.log("Server sudah berjalan, silahkan buka http://0.0.0.0:%d", PORT);
- })
+const express = require("express");
+const app = express();
+const port = 2424;
+const path = require("path");
+const public = path.join(__dirname, "../public");
+
+app.use(express.static(public));
+
+app.get("/", function (req, res) {
+  res.set('Content-Type', 'text/html')
+  res.sendFile(path.join(public, "landing_page.html"));
+  res.status(200);
+
+});
+app.get("/cars", function (req, res) {
+  res.set('Content-Type', 'text/html')
+  res.sendFile(path.join(public, "cari_mobil.html"));
+  res.status(200);
+});
+
+app.get("*", function (req, res) {
+  res.set('Content-Type', 'text/html')
+  res.sendFile(path.join(public, "404.html"));
+  res.status(404);
+});
+
+
+app.listen(port, () => {
+  console.log("Example app listening on http://localhost:%d", port);
+});

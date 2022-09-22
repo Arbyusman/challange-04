@@ -138,7 +138,7 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .select-hide {
@@ -166,7 +166,7 @@ nav {
   background-size: auto;
 }
 
-.form-date {
+.form-date, .form-time {
   color: #3c3c3c;
   font-family: "Helvetica";
   font-style: normal;
@@ -202,6 +202,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1;
   display: block;
   background: url(../images/icons/fi_calendar.png) no-repeat;
+  background-size: auto;
+  margin-right: -2% !important;
+}
+input[type="time"]:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.form-time:hover,
+.form-time::after {
+  background: #ffffff;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+  box-shadow: none !important;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../images/icons/fi_clock.png) no-repeat;
   background-size: auto;
   margin-right: -2% !important;
 }
@@ -250,6 +274,9 @@ input[type="text"]:hover {
   grid-template-columns: 32.5% 32.5% 32.5%;  
   justify-content: space-between;
   gap: 0.5%;
+  margin-top: 2%;
+  
+  
   
     
 }

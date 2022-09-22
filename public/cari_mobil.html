@@ -132,12 +132,23 @@
             class="form-date container-fluid"
             type="date"
             name="InputDate"
-            id="inputdate"
+            id="dateFilter"
             
           />
         </div>
 
-        <div class="select-waktu mx-2 my-3" style="width: 21%">
+        <div class="select-date mx-2 my-3" style="width: 21%">
+          <label for="inpudate" style="font-size: 14px">Waktu</label>
+          <input
+            class="form-time container-fluid"
+            type="time"
+            name="InputTime"
+            id="timeFilter"
+            
+          />
+        </div>
+        
+        <!-- <div class="select-waktu mx-2 my-3" style="width: 21%">
           <label for="pilih-waktu" style="font-size: 14px">Waktu Jemput/Ambil</label>
           <select class="container-fluid" id="pilih-waktu" style="height: 50%">
             <option>Pilih Waktu</option>
@@ -162,12 +173,12 @@
               <p>WIB</p>
             </option>
           </select>
-        </div>
+        </div> -->
 
         <div class="select-penumpang mx-2 my-3 " style="width: 21%">
             <label for="Jumlah-penumpang" style="font-size: 14px">Jumlah Penumpang (Optional)</label>
             <input
-            id="jumlah-penumpang "
+              id="jumlah-penumpang"
               type="text"
               class="form-control mx-0 my-0"
               placeholder="Jumlah Penumpang"
@@ -180,7 +191,7 @@
 
         
         <div
-        class="my-3 d-flex align-items-center justify-content-center"
+        class="my-3 mx-2 d-flex align-items-center justify-content-center"
           style="width: 16%;height: 50% !important; "
           id="submit-cari-mobil"
         >
@@ -204,8 +215,7 @@
         
       </div>
       
-    
-     
+      
 
       
     </section>
@@ -222,10 +232,10 @@
 
 
     <!-- Footer -->
-    <footer class="container-fluid d-flex justify-content-center my-5">
+    <footer class="container-fluid d-flex justify-content-center position-absolute my-5 mx-4 ">
       <div
         id="footer"
-        class="row justify-content-center"
+        class="row justify-content-center "
         style="width: 90%; font-size: 14px"
       >
         <div id="footer-alamat" class="col-4 pe-5">

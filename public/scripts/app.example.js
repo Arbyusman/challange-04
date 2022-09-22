@@ -3,6 +3,9 @@ class App {
     this.clearButton = document.getElementById("clear-btn");
     this.loadButton = document.getElementById("load-btn");
     this.carContainerElement = document.getElementById("cars-container");
+    this.filterDate = document.getElementById("dateFilter");
+    this.filterTime = document.getElementById("timeFilter");
+    this.filterPenumpang = document.getElementById("jumlah-penumpang");
   }
 
   async init() {
@@ -14,17 +17,39 @@ class App {
   }
 
   run = () => {
-    Car.list.forEach((car) => {
+    this.clear();
+    const data = this.filterCari();
+
+    data.forEach((Car) => {
       const node = document.createElement("div");
-      node.classList.add("card-mobil");
-      node.innerHTML = car.render();
+      node.innerHTML = Car.render();
       this.carContainerElement.appendChild(node);
+      
     });
+
   };
+
+  
+  filterCari() {
+    const dateValue = this.filterDate.value;
+    const timeValue = this.filterTime.value;
+    const capacityValue = this.filterPenumpang.value;
+    const newDateTime = new Date(`${dateValue} ${timeValue}`);
+    
+      return Car.list.filter(
+        (car) =>
+          car.capacity >= capacityValue && car.availableAt >= newDateTime
+          );
+          
+         
+          
+    
+  }
 
   async load() {
     const cars = await Binar.listCars();
     Car.init(cars);
+    
   }
 
   clear = () => {

@@ -47,15 +47,15 @@ class Car {
         <img
         id="card-image"
           src="${this.image}"
-          class="img-fluid rounded-2 mt-2 shadow-sm"
+          class="img-fluid rounded-2  shadow-sm"
           alt="${this.manufacture}"
           style="width: 270px; height: 160px"
         />
       </div>
       <div class="card-body">
-        <p id="card-name">Nama/Tipe Mobil</p>
+        <p id="card-name">Tipe Mobil (${this.model})  </p>
         <h5 class="fw-semibold" id="card-rent">RP ${this.rentPerDay} /hari</h5>
-        <p class="card-text" id="card-desc">
+        <p class="card-text" id="card-desc" style="height:20%;">
           ${this.description}
         </p>
         <div>
@@ -72,7 +72,7 @@ class Car {
             <p class="ps-1" id="card-year">Tahun ${this.year}</p>
           </div>
         </div>
-        <div>
+        <div class="align-self-end">
           <button
             type="button"
             class="btn btn-success fw-bold border-0 px-3 container-fluid"
