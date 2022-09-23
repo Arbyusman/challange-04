@@ -188,30 +188,34 @@ nav {
   border-radius: 2px;
   box-shadow: none !important;
 }
-
-input[type="date"]:focus {
+#dateFilter,
+#dateFilter:focus {
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: url(../images/icons/fi_calendar.png) no-repeat center right 4%;
+  background-size: auto;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+
+  
+
+#dateFilter::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(../images/icons/fi_calendar.png) no-repeat;
-  background-size: auto;
-  margin-right: -2% !important;
+  background:none !important ;
 }
-input[type="time"]:focus {
-  outline: none !important;
-  outline-width: 0 !important;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-}
+
 
 .form-time:hover,
 .form-time::after {
@@ -221,27 +225,41 @@ input[type="time"]:focus {
   box-shadow: none !important;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
+#timeFilter::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(../images/icons/fi_clock.png) no-repeat;
-  background-size: auto;
-  margin-right: -2% !important;
+  background:none !important;
 }
-
-input[type="text"],
-input[type="text"]:focus {
+#timeFilter,
+#timeFilter:focus {
   color: rgb(0, 0, 0);
   padding: 8px 16px;
   width: 100%;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1) !important;
   border: 1px solid #d0d0d0;
   border-radius: 2px;
-  background: url(../images/icons/fi_users.png) no-repeat center right 3%;
+  background: url(../images/icons/fi_clock.png) no-repeat center right 4%;
+  background-size: auto;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#jumlah-penumpang,
+#jumlah-penumpang:focus {
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: url(../images/icons/fi_users.png) no-repeat center right 4%;
   background-size: auto;
 }
-input[type="text"]:hover {
+#jumlah-penumpang:hover {
   background: #ffffff;
   border: 1px solid #5cb85f;
   border-radius: 2px;

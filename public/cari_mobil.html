@@ -17,6 +17,7 @@
     ></script>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/calender.css" /> -->
   </head>
 
   <body>
@@ -130,9 +131,12 @@
           <label for="inpudate" style="font-size: 14px">Tanggal</label>
           <input
             class="form-date container-fluid"
-            type="date"
+            
             name="InputDate"
             id="dateFilter"
+            placeholder="Pilih Tanggal" 
+            type="text" 
+            onfocus="(this.type='date')"
             
           />
         </div>
@@ -141,9 +145,14 @@
           <label for="inpudate" style="font-size: 14px">Waktu</label>
           <input
             class="form-time container-fluid"
-            type="time"
+            type="text"
             name="InputTime"
             id="timeFilter"
+            placeholder="Pilih Waktu" 
+            type="text" 
+            onfocus="(this.type='time')"
+            
+            
             
           />
         </div>
@@ -322,5 +331,6 @@
     <script type="text/javascript" src="./scripts/car.example.js"></script>
     <script type="text/javascript" src="./scripts/main.example.js"></script>
     <script src="./scripts/dropdown_filter.js"></script>
+    <!-- <script src="./scripts/calender.js"></script> -->
   </body>
 </html>

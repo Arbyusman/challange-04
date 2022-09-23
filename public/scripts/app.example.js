@@ -19,37 +19,30 @@ class App {
   run = () => {
     this.clear();
     const data = this.filterCari();
+    console.log("Jumlah Mobil :",data);
 
     data.forEach((Car) => {
       const node = document.createElement("div");
       node.innerHTML = Car.render();
       this.carContainerElement.appendChild(node);
-      
     });
-
   };
 
-  
   filterCari() {
     const dateValue = this.filterDate.value;
     const timeValue = this.filterTime.value;
     const capacityValue = this.filterPenumpang.value;
+    
     const newDateTime = new Date(`${dateValue} ${timeValue}`);
-    
-      return Car.list.filter(
-        (car) =>
-          car.capacity >= capacityValue && car.availableAt >= newDateTime
-          );
-          
-         
-          
-    
+
+    return Car.list.filter(
+      (car) => car.capacity >= capacityValue && car.availableAt >= newDateTime
+    );
   }
 
   async load() {
     const cars = await Binar.listCars();
     Car.init(cars);
-    
   }
 
   clear = () => {
